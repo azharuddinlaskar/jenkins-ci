@@ -1,4 +1,4 @@
-version: "2"
+version : "3.5"
 
 services:
     jenkins:
@@ -45,7 +45,7 @@ services:
          - ci-pipeline-net
 networks:
     ci-pipeline-net:
-        driver: bridge
+      name: ci-pipeline-net
 
 volumes:
   jenkins_home:
