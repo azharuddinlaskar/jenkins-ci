@@ -16,7 +16,7 @@ services:
     sonarqube:
         depends_on:
          - db
-        image: azharuddinlaskar/sonarscanner
+        image: sonarqube
         container_name: sonarqube
         ports:
          - 9000:9000
