@@ -2,7 +2,7 @@ version: "2"
 
 services:
     jenkins:
-        image: jenkins-docker
+        image: azharuddinlaskar/jenkins-docker
         container_name: jenkins-ci
         depends_on:
          - sonarqube
@@ -16,7 +16,7 @@ services:
     sonarqube:
         depends_on:
          - db
-        image: sonarqube
+        image: azharuddinlaskar/sonarscanner
         container_name: sonarqube
         ports:
          - 9000:9000
